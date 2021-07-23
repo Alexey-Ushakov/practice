@@ -61,3 +61,12 @@ for elem in ls:
     print(elem)
 print(ls)
 
+
+variable = [1, 2, 2, 3, 3, 4, 4, 5, 5, 1] # Тут мы вытаскиваем из списка первый элемент и засовывем его в конец
+#  Можно получить бесконечный поток данных
+variable.append(variable.pop(0))
+print(variable)
+
+while True:
+    print(variable)
+    variable.append(variable.pop(0))
